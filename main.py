@@ -6,6 +6,7 @@ from unittest import main
 
 food = budget.Category("Food")
 food.deposit(900, "initial deposit")
+
 auto = budget.Category("Auto")
 auto.deposit(1000, "initial deposit")
 
