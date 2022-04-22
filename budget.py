@@ -42,6 +42,21 @@ class Category:
       self.withdraw(amount,"Transfer to " + otherBudget.name)
       otherBudget.deposit(amount,"Transfer from " + self.name)
       return True 
+    
+    
+   def __str__(self):
+    firstLine = ""
+    if(len(self.name)%2 == 0):
+      for i in range(int((30 - len(self.name)) / 2)):
+        firstLine += '*'  
+      firstLine = firstLine + self.name + firstLine
+
+    else:
+      for i in range(int((29 - len(self.name)) / 2)):
+        firstLine += '*'  
+      firstLine = firstLine + self.name + firstLine + '*'
+        
+      return firstLine
       
         
     
