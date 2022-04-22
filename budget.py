@@ -20,6 +20,7 @@ class Category:
     else :
       return False
 
+    
   def get_balance(self):
     balance = 0
     for i in range(len(self.ledger)):
@@ -33,6 +34,7 @@ class Category:
     else :
       return True  
 
+    
   def transfer(self, amount,  otherBudget):
     if amount > self.get_balance() :
       return False
